@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    color: #fff;
+}
+html,body,.wrapper{
+    width: 100%;
+    height:100%;
+}
+.wrapper{
+    position: relative;
+}
+.ppt-list{
+    width: 100%;
+    height: 100%;
+}
+.ppt-list .ppt{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 200px;
+    background-size: cover;
+    background-position: center;
+}
+.ppt-list .ppt:nth-of-type(1){    
+    background-image:url(../images/bg-1.jpg);
+}
+.ppt-list .ppt:nth-of-type(2){
+    display: none;
+    background-image:url(../images/bg-2.jpg);
+}
+.ppt-list .ppt:nth-of-type(3){
+    display: none;
+    background-image:url(../images/bg-3.jpg);
+}
+.ppt-list .ppt p{
+    display: block;
+    width: 40%;
+    font-size: 16px;
+}
+.ppt-list .ppt img{
+    position: relative;
+    float: right;
+    width:40%;
+    top:-100px;   
+}
+/* 左右按钮 */
+.btn{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top:-15px;
+
+}
+.btn .left-btn,.btn .right-btn{
+    position: absolute;
+    display: inline-block;
+    width:30px;
+    height: 30px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.btn .left-btn{
+    left:100px;
+    background-image: url(../images/left-btn.png)
+}
+.btn .right-btn{
+    right:100px;
+    background-image: url(../images/right-btn.png)
+}
+
+/* 小圆点样式 */
+.circle-list{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 100px;
+}
+.circle-list ul{
+    display: inline-block;
+}
+.circle-list ul li{
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    background:#666;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.circle-list ul .active{
+    background: #fff;
+}
