@@ -77,7 +77,7 @@ var coolppt = {
         clearTimeout(this.pptTimer);
         this.pptTimer = setTimeout(function(){
             _this.toolClickFunc('right');
-        },2000);
+        },3000);
     },
     toolClickFunc: function(decrition){
         if(this.flag){
